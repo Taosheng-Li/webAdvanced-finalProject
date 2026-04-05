@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+        margin-top: 20px;
+      }
+
+      .product-card {
+        border: 1px solid #ddd;
+        padding: 12px;
+        border-radius: 8px;
+      }
+
+      .product-card img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 8px;
+      }
+
+      .product-name {
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+
+      .product-desc {
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 6px;
+      }
+
+      .product-price {
+        font-weight: bold;
+      }
+
+      .video-section h2 {
+        margin: 0;
+      }
+      .video-section video {
+        margin-top: 20px;
+      }
+      #back {
+        margin-top: 20px;
+        margin-left: 20px;
+        display: inline-block;
+        padding: 12px 30px;
+        border: 1px solid #000;
+        border-radius: 20px;
+        color: #000;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+      }
+
+      #back:hover {
+        background-color: #000;
+        color: #fff;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="navbar"></header>
+    <a href="index.html">
+      <div id="back">Back to homepage</div>
+    </a>
+
+    <div id="gridContent" class="product-grid"></div>
+    <section id="catalog-video" class="video-section">
+      <div class="container">
+        <h2>Video tour</h2>
+        <p>
+          See how our camera rental works and get quick tips for using the gear.
+        </p>
+
+        <video
+          id="catalogVideo"
+          controls
+          preload="metadata"
+          poster="./asset/video/catalog-tour-poster.jpg"
+          width="100%"
+        >
+          <source src="./asset/catalog/cannon.mp4" type="video/mp4" />
+
+          <track kind="subtitles" srclang="en" label="English" default />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+    <footer id="contact"></footer>
+
+    <script src="loader.js"></script>
+    <script src="./catalog.js"></script>
+  </body>
+</html>
