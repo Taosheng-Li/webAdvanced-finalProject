@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import "./index.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import MainPage from "./components/MainPage/MainPage";
-import CatalogPage from "./components/CatalogPage/CatalogPage";
-import OrderPage from "./components/OrderPage/OrderPage";
+import MainPage from "./pages/MainPage/MainPage";
+import CatalogPage from "./pages/CatalogPage/CatalogPage";
+import OrderPage from "./pages/OrderPage/OrderPage";
 
 function ScrollToHash() {
   const { hash } = useLocation();
