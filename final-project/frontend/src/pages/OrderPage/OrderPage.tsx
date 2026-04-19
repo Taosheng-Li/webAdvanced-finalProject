@@ -106,7 +106,7 @@ function OrderPage() {
     setLoading(true);
 
     try {
-      const res = await fetch("https://httpbin.org/post", {
+      const res = await fetch("/api/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(result.data),
@@ -338,7 +338,7 @@ function OrderPage() {
             <div className="response-section">
               <h2>Submission Successful</h2>
               <p className="response-subtitle">
-                Your data was sent to httpbin and the server responded:
+                Your order has been recorded successfully. Here is the server response:
               </p>
 
               <div className="response-cards">

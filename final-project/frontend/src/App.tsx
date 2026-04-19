@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import MainPage from "./pages/MainPage/MainPage";
 import CatalogPage from "./pages/CatalogPage/CatalogPage";
 import OrderPage from "./pages/OrderPage/OrderPage";
+import OrdersListPage from "./pages/OrdersListPage/OrdersListPage";
 
 function ScrollToHash() {
   const { hash } = useLocation();
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/order" element={<OrderPage />} />
+        <Route path="/orders-list" element={<OrdersListPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

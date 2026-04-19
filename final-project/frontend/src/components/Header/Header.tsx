@@ -61,6 +61,9 @@ function Header() {
               </Link>
             </li>
             <li>
+              <Link to="/orders-list">Admin: Orders</Link>
+            </li>
+            <li>
               <a
                 href="#contact"
                 onClick={(e) => handleHashClick(e, "#contact")}
